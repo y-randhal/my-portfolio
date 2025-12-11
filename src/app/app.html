@@ -19,7 +19,7 @@
     <h1 class="text-5xl md:text-6xl font-bold mb-4 crt-flicker">{{ title() }}</h1>
     <div class="flex justify-center mb-8">
       <div class="w-32 h-32 rounded-full overflow-hidden border-4 border-white shadow-lg">
-        <img src="assets/img/yuri.png" alt="Yuri" class="w-full h-full object-cover">asdfghjjkh
+        <img src="assets/img/yuri.png" alt="Yuri" class="w-full h-full object-cover">
       </div>
     </div>
     <p class="text-xl md:text-2xl mb-8 crt-flicker">Full Stack Developer & Designer</p>
@@ -87,10 +87,12 @@
     <div class="max-w-4xl mx-auto grid grid-cols-2 md:grid-cols-3 gap-4">
       @for (item of [
         { title: 'Angular', link: 'https://angular.dev', progress: 90 },
-        { title: 'TypeScript', link: 'https://www.typescriptlang.org/', progress: 85 },
-        { title: 'Tailwind CSS', link: 'https://tailwindcss.com/', progress: 80 },
         { title: 'RxJS', link: 'https://rxjs.dev/', progress: 75 },
-        { title: 'Node.js', link: 'https://nodejs.org/', progress: 70 },
+        { title: 'TypeScript', link: 'https://www.typescriptlang.org/', progress: 80 },
+        { title: 'Tailwind CSS', link: 'https://tailwindcss.com/', progress: 70 },
+        { title: 'Ionic', link: 'https://ionicframework.com/', progress: 70 },
+        { title: 'Node.js', link: 'https://nodejs.org/', progress: 60 },
+        { title: 'NestJs', link: 'https://nestjs.org/', progress: 40 },
         { title: 'Git', link: 'https://git-scm.com/', progress: 85 },
       ]; track item.title) {
         <a
@@ -123,7 +125,7 @@
     <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-6">
       @for (item of [
         { title: 'Portfolio Website', image: 'assets/img/projects/portfolio.png', code: 'https://github.com/y-randhal/my-portfolio', demo: 'https://y-randhal.github.io/my-portfolio', description: 'Personal portfolio built with Angular & Tailwind CSS' },
-        { title: 'Pyramid Landing Page', image: 'assets/img/pyramid-preview.png', code: 'https://github.com/y-randhal/pyramid-lading-page', demo: 'https://example.com/ecommerce', description: 'Full-stack e-commerce platform with payment integration' },
+        { title: 'Pyramid Landing Page', image: 'assets/img/pyramid-preview.png', code: 'https://github.com/y-randhal/pyramid-lading-page', demo: 'https://example.com/ecommerce', description: 'A comically designed landing page to sell a supposed course on how to master AI, created using React, Next, Magic UI, and others.' },
         { title: 'Task Manager', image: 'assets/img/projects/taskmanager.png', code: 'https://github.com/y-randhal/task-manager', demo: 'https://example.com/tasks', description: 'Productivity app with drag-and-drop functionality' },
         { title: 'Weather Dashboard', image: 'assets/img/projects/weather.png', code: 'https://github.com/y-randhal/weather-app', demo: 'https://example.com/weather', description: 'Real-time weather data visualization' },
       ]; track item.title) {
@@ -175,7 +177,7 @@
 
 <footer class="bg-darker text-white py-8">
   <div class="container mx-auto px-4 text-center">
-    <p class="text-gray-300">© 2024 {{ title() }}. Built with Angular & Tailwind CSS.</p>
+    <p class="text-gray-300">© 2024 <a href="https://github.com/y-randhal"><u>{{ title() }}</u></a>. Built with Angular & Tailwind CSS.</p>
   </div>
 </footer>
 
