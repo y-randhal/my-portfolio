@@ -2,7 +2,10 @@
 <nav class="sticky top-0 z-20 w-full border-b border-white/10 bg-black/40 dark:bg-gray-900/80 backdrop-blur-md shrink-0">
   <div class="container mx-auto px-4">
     <div class="flex items-center justify-between h-16">
-      <a href="#" class="text-white font-semibold text-lg tracking-tight">{{ title().split(' ')[0] }}</a>
+      <a href="#" class="flex items-center gap-2.5 text-white font-semibold text-lg tracking-tight">
+        <img src="favicon.svg" alt="" class="h-8 w-8 rounded-md flex-shrink-0" />
+        <span>{{ title().split(' ')[0] }}</span>
+      </a>
       <div class="flex items-center gap-6">
         <a href="#cv" class="text-white/90 hover:text-white text-sm font-medium transition-colors">Resume</a>
         <a href="#about" class="text-white/90 hover:text-white text-sm font-medium transition-colors">About</a>
@@ -163,10 +166,10 @@
     <p class="text-center text-primary font-medium mb-12">What I've built</p>
     <div class="mx-auto grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-10">
       @for (item of [
-        { title: 'Portfolio Website', image: 'assets/img/my-portfolio-preview.png', code: 'https://github.com/y-randhal/my-portfolio', demo: 'https://y-randhal.github.io/my-portfolio', description: 'Personal portfolio built with Angular & Tailwind CSS' },
         { title: 'Pyramid Landing Page', image: 'assets/img/pyramid-preview.png', code: 'https://github.com/y-randhal/pyramid-lading-page', demo: 'https://y-randhal.github.io/pyramid-lading-page/', description: 'A comically designed landing page to sell a supposed course on how to master AI, created using React, Next, Magic UI, and others.' },
         { title: 'SmartDoc Analyst', image: 'assets/img/smartdoc-ai-preview.png', code: 'https://github.com/y-randhal/smartdoc-analyst', description: 'RAG (Retrieval Augmented Generation) app for document analysis. Upload PDFs, TXT, or MD files, ask questions, and get AI-powered answers with source citations. Nx monorepo with Angular 17+, NestJS, LangChain.js, Groq (Llama 3.3), and Pinecone vector DB.' },
-        { title: 'Reactive Crypto Terminal', image: 'assets/img/reactive-crypto-terminal-preview.png', code: 'https://github.com/y-randhal/reactive-crypto-terminal', demo: 'https://example.com/weather', description: '' },
+        { title: 'Reactive Crypto Terminal', image: 'assets/img/reactive-crypto-terminal-preview.png', code: 'https://github.com/y-randhal/reactive-crypto-terminal', demo: 'https://y-randhal.github.io/reactive-crypto-terminal/', description: 'Real-time cryptocurrency prices and candlestick charts via Binance WebSocket. Built with Angular 20, RxJS, and Lightweight Charts.' },
+        { title: 'Portfolio Website', image: 'assets/img/my-portfolio-preview.png', code: 'https://github.com/y-randhal/my-portfolio', demo: 'https://y-randhal.github.io/my-portfolio', description: 'Personal portfolio built with Angular & Tailwind CSS' },
       ]; track item.title) {
         <div class="bg-white dark:bg-gray-800 rounded-xl shadow-md hover:shadow-xl hover:-translate-y-1 transition-all duration-300 overflow-hidden border border-gray-200 dark:border-gray-700">
           <div class="relative aspect-video bg-gray-100 dark:bg-gray-700 overflow-hidden">
